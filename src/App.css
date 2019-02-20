@@ -1,0 +1,17 @@
+.mainContainer {
+  height: 98vh;
+  width: auto;
+  margin: 5px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "header header header header"
+    "container container container container"
+    "container container container container"
+    "container container container container";
+}
+
+.header {
+  grid-area: header;
+}
