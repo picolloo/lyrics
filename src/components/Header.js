@@ -1,34 +1,31 @@
 import React, { Component } from "react";
 
-import api from "../services/api";
 import "./Header.css";
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      artist: "akon",
-      title: "lonely"
+      artist: ["akon"],
+      title: ["lonely"]
     };
   }
 
-  handleSubmit = async e => {
+  handleSubmit = e => {
     e.preventDefault();
 
-    // const lyric = await api(this.state.artist, this.state.title.split(" "));
-
-    // this.setState({ lyric: lyric });
+    this.props.submitHandler(this.state.artist, this.state.title);
   };
 
   handleArtistChange = e => {
     this.setState({
-      artist: e.target.value
+      artist: e.target.value.split(" ")
     });
   };
 
   handleTitleChange = e => {
     this.setState({
-      title: e.target.value
+      title: e.target.value.split(" ")
     });
   };
 

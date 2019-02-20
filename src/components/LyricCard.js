@@ -6,6 +6,12 @@ export default class LyricCard extends Component {
   }
 
   render() {
-    return <textarea className={this.props.role} value={this.props.lyric} />;
+    return (
+      <textarea
+        readOnly
+        className={this.props.value}
+        value={this.props.lyric}
+      />
+    );
   }
 }
