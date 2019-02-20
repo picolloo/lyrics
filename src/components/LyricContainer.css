@@ -6,6 +6,7 @@
     "card1 card1 card2 card2"
     "card1 card1 card2 card2";
   grid-area: container;
+  grid-gap: 1em;
 }
 
 .card1 {

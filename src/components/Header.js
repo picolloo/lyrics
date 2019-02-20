@@ -34,25 +34,23 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div className="headerForm header">
-        <form onSubmit={this.handleSubmit}>
-          <input
-            className="artistInput"
-            onChange={this.handleArtistChange}
-            value={this.state.artist}
-            placeholder="Artist"
-          />
+      <form className="headerForm header" onSubmit={this.handleSubmit}>
+        <input
+          className="artistInput"
+          onChange={this.handleArtistChange}
+          value={this.state.artist}
+          placeholder="Artist"
+        />
 
-          <input
-            className="titleInput"
-            onChange={this.handleTitleChange}
-            value={this.state.title}
-            placeholder="Title"
-          />
+        <input
+          className="titleInput"
+          onChange={this.handleTitleChange}
+          value={this.state.title}
+          placeholder="Title"
+        />
 
-          <button type="submit">Search</button>
-        </form>
-      </div>
+        <button type="submit">Search</button>
+      </form>
     );
   }
 }
