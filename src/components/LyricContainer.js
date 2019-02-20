@@ -10,7 +10,11 @@ export default class LyricContainer extends Component {
     };
   }
 
-  syncScrolls = e => {};
+  syncScrolls = e => {
+    this.setState({
+      scroll: e.target.scrollTop
+    });
+  };
 
   render() {
     return (

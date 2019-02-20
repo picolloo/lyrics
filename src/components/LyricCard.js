@@ -10,6 +10,7 @@ export default class LyricCard extends Component {
         className={this.props.value}
         value={this.props.lyric}
         placeholder="Remember, be nice!"
+        style={{ scrollTop: this.props.scrollTop }}
       />
     );
   }
