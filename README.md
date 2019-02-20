@@ -19,5 +19,5 @@ The first draft that I could think is something like this:
 
 - [x] Lyric by artist and title
 - [x] Get by artist with multiples names
-- [] Lyric translation to PT-BR
-- [] Top music list
+- [ ] Lyric translation to PT-BR
+- [ ] Top music list
