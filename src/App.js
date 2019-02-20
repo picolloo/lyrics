@@ -16,7 +16,10 @@ class App extends Component {
   handleFormSubmit = async (artist, title) => {
     const lyric = await api(artist, title);
 
-    this.setState({ lyric1: lyric, lyric2: lyric });
+    const lyricEN = lyric.text;
+    const lyricPT = lyric.translate[0].text;
+
+    this.setState({ lyric1: lyricEN, lyric2: lyricPT });
   };
 
   render() {
